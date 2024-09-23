@@ -1,62 +1,61 @@
 /*app scroll*/
 .app-scroll::-webkit-scrollbar-thumb,
 .app-scroll-thin::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb-color);
+    background: #d8dce0;
 }
 .app-scroll-thin::-webkit-scrollbar {
-    background: var(--secondary-bg-color);
+    background: #eee;
 }
 .app-scroll::-webkit-scrollbar:hover,
 .app-scroll-thin::-webkit-scrollbar:hover {
-    background: var(--secondary-bg-color);
+    background: #eee;
 }
 
 .messenger {
-    background: var(--primary-bg-color);
+    background: #fff;
 }
 .messenger-search[type="text"] {
-    background: var(--secondary-bg-color);
+    background: #f7f7f7;
     color: #333;
 }
 .messenger-listView {
-    background: var(--primary-bg-color);
-    border: 1px solid var(--border-color);
+    background: #fff;
+    border: 1px solid #eee;
 }
 .messenger-listView-tabs {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid #eee;
 }
 .messenger-listView-tabs a:hover,
 .messenger-listView-tabs a:focus {
-    background-color: var(--secondary-bg-color);
+    background-color: #f7f7f7;
 }
 .messenger-favorites div.avatar {
-    border: 2px solid var(--primary-bg-color);
+    border: 2px solid #fff;
 }
-
 .messenger-list-item:hover {
-    background: var(--secondary-bg-color);
+    background: #f7f7f7;
 }
 .messenger-messagingView {
-    border-top: 1px solid var(--secondary-bg-color);
-    border-bottom: 1px solid var(--secondary-bg-color);
-    background: var(--messagingView-bg-color);
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fafaff;
 }
 .m-header-messaging {
-    background: var(--primary-bg-color);
+    background: #fff;
 }
 .messenger-infoView {
-    background: var(--primary-bg-color);
-    border: 1px solid var(--border-color);
+    background: #fff;
+    border: 1px solid #eee;
 }
 .messenger-infoView > p {
     color: #000;
 }
 .divider {
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid #e0e0e0;
 }
 .messenger-sendCard {
-    background: var(--primary-bg-color);
-    border-top: 1px solid var(--border-color);
+    background: #fff;
+    border-top: 1px solid #eee;
 }
 .attachment-preview > p {
     color: #333;
@@ -64,56 +63,37 @@
 .m-send {
     color: #333;
 }
-.message-card .message {
-    background: var(--message-card-color);
+.message-card p {
+    background: #ffffff;
     color: #656b75;
     box-shadow: 0px 6px 11px rgba(18, 67, 105, 0.03);
 }
 .m-li-divider {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid #ebebeb;
 }
 .m-header a,
 .m-header a:hover,
 .m-header a:focus {
     text-decoration: none;
-    color: #202020;
+    color: #606679;
 }
 .messenger-list-item td p {
-    color: #3c3c3c;
-}
-.messenger-list-item td span {
-    color: #929292;
+    color: #606679;
 }
 .activeStatus {
-    border: 2px solid var(--primary-bg-color);
+    border: 2px solid #fff;
 }
 .messenger-list-item:hover .activeStatus {
-    border-color: var(--secondary-bg-color);
+    border-color: #f7f7f7;
 }
 .messenger-favorites > div p {
     color: #4a4a4a;
 }
 
 .avatar {
-    background-color: var(--secondary-bg-color);
-    border-color: var(--border-color);
+    background-color: #eee;
 }
-.messenger-sendCard svg {
-    color: var(--send-input-icons-color);
-}
-.messenger-title {
-    color: #797979;
-}
-.messenger-title > span {
-    background-color: var(--primary-bg-color);
-}
-.messenger-title::before {
-    background-color: var(--border-color);
-}
-.message-hint span {
-    background: var(--message-hint-bg-color);
-    color: var(--message-hint-color);
-}
+
 /*
 ***********************************************
 * Placeholder loading
@@ -121,18 +101,16 @@
 */
 .loadingPlaceholder-body div,
 .loadingPlaceholder-header tr td div {
-    background: var(--secondary-bg-color);
+    background: #f6f7f8;
     background-image: -webkit-linear-gradient(
         left,
-        var(--secondary-bg-color) 0%,
-        var(--secondary-bg-color) 20%,
-        var(--secondary-bg-color) 40%,
-        var(--secondary-bg-color) 100%
+        #f6f7f8 0%,
+        #eaecf3 20%,
+        #f6f7f8 40%,
+        #f6f7f8 100%
     );
 }
-.messenger-infoView > nav > p {
-    color: #333;
-}
+
 /*
 ***********************************************
 * App Modal
@@ -140,7 +118,7 @@
 */
 
 .app-modal-card {
-    background: var(--modal-bg-color);
+    background: rgba(255, 255, 255, 0.89);
 }
 .app-modal-header {
     color: #000;

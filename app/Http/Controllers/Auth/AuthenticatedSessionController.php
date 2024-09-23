@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
@@ -14,9 +15,14 @@ class AuthenticatedSessionController extends Controller
     /**
      * Display the login view.
      */
-    public function create(): View
+    public function create($lang = ''): View
     {
-        return view('auth.login');
+        if ($lang == '') {
+            $lang = \App\Models\Utility::getValByName('default_language');
+        }
+        App::setLocale($lang);
+
+        return view('auth.login', compact('lang'));
     }
 
     /**

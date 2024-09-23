@@ -20,6 +20,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'type',
+        'avatar',
+        'lang',
+        'created_by'
     ];
 
     /**
@@ -43,5 +47,14 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function creatorId()
+    {
+        if ($this->type == 'super admin') {
+            return $this->id;
+        } else {
+            return $this->created_by;
+        }
     }
 }
